@@ -1,0 +1,43 @@
+{
+  "name": "hardhat-template",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test --fulltrace",
+    "clean": "hardhat clean",
+    "lint:sol": "solhint './contracts/**/*.sol'",
+    "lint:ts": "eslint . --ext .ts"
+  },
+  "devDependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.5",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@tsconfig/recommended": "^1.0.1",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@typechain/hardhat": "^6.1.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.15",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "chai": "^4.3.7",
+    "chalk": "4.x",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.29.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.4",
+    "hardhat-tracer": "^1.2.0",
+    "mocha": "^10.2.0",
+    "solhint": "^3.3.7",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.1",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2"
+  }
+}

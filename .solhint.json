@@ -1,0 +1,23 @@
+{
+  "extends": "solhint:recommended",
+  "rules": {
+    "payable-fallback": "error",
+    "reason-string": [
+      "error",
+      {
+        "maxLength": 64
+      }
+    ],
+    "comprehensive-interface": "warn",
+    "func-param-name-mixedcase": "warn",
+    "modifier-name-mixedcase": "warn",
+    "private-vars-leading-underscore": [
+      "warn",
+      {
+        "strict": true
+      }
+    ],
+    "ordering": "off",
+    "compiler-version": "off"
+  }
+}
