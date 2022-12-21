@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+# circom file
+/circuits/*.r1cs
+/circuits/*.vkey.json
+/circuits/*.wasm
+/circuits/*.zkey
+
+# guess
+/guess/*.wtns
+/guess/proof.json
+/guess/public.json

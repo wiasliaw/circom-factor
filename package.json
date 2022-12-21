@@ -7,7 +7,9 @@
     "test": "hardhat test --fulltrace",
     "clean": "hardhat clean",
     "lint:sol": "solhint './contracts/**/*.sol'",
-    "lint:ts": "eslint . --ext .ts"
+    "lint:ts": "eslint . --ext .ts",
+    "circom:dev": "hardhat circom --deterministic --debug --verbose",
+    "circom:prod": "hardhat circom --verbose"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.7.0",
@@ -28,8 +30,10 @@
     "eslint": "^8.29.0",
     "ethers": "^5.7.2",
     "hardhat": "^2.12.4",
+    "hardhat-circom": "^3.3.2",
     "hardhat-tracer": "^1.2.0",
     "mocha": "^10.2.0",
+    "snarkjs": "^0.5.0",
     "solhint": "^3.3.7",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.1",

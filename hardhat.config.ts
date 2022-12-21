@@ -6,6 +6,7 @@ import '@nomiclabs/hardhat-ethers';
 import '@nomicfoundation/hardhat-chai-matchers';
 import '@typechain/hardhat';
 import 'hardhat-tracer';
+import 'hardhat-circom';
 
 dotenv.config();
 
@@ -20,10 +21,9 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: '0.8.2',
+        version: '0.8.16',
         settings: {
-          optimizer: { enabled: true, runs: 200 },
-          evmVersion: 'berlin',
+          optimizer: { enabled: true, runs: 100_0000 },
         },
       },
     ],
@@ -42,6 +42,18 @@ const config: HardhatUserConfig = {
     outDir: 'dist/typechain',
     target: 'ethers-v5',
   },
+
+  // circom
+  circom: {
+    inputBasePath: './circuits',
+    ptau: 'https://hermezptau.blob.core.windows.net/ptau/powersOfTau28_hez_final_15.ptau',
+    circuits: [
+      {
+        name: 'factor',
+        protocol: 'plonk'
+      },
+    ],
+  }
 };
 
 export default config;
